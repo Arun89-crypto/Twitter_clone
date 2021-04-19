@@ -1,0 +1,166 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: TwitterChirpExtendedHeavy, Verdana, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.container {
+  background: black;
+}
+.container,
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 90vh;
+  min-height: 90vh;
+}
+.left img {
+  height: 45%;
+  width: 45%;
+}
+.left {
+  min-width: 55vw;
+  background: url("https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png");
+  background-position: center center;
+  background-size: cover;
+}
+.right {
+  min-width: 45vw;
+  flex-direction: column;
+  position: relative;
+}
+.right-upper {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 5px;
+}
+.right-upper input,
+.right-upper button {
+  padding: 19px 10px;
+  width: 29%;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+.right-upper p {
+  position: absolute;
+  color: #1da1f2;
+  right: 42%;
+  font-size: 13px;
+  top: 65px;
+  cursor: pointer;
+}
+.right-upper p:hover {
+  text-decoration: underline;
+}
+.right-upper input {
+  background: none;
+  border: 1px solid #3b4044;
+  border-radius: 5px;
+}
+.right-upper input::placeholder {
+  color: #6e767d;
+}
+.right-upper button {
+  width: 18%;
+  padding: 14px 15px;
+  border-radius: 50px;
+  background: none;
+  color: #1da1f2;
+  border: 1px solid #1da1f2;
+  font-weight: 550;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.right-upper button:hover {
+  background: rgba(29, 161, 242, 0.1);
+}
+.right-upper input:focus {
+  outline: none;
+  border: 2px solid #1da1f2;
+}
+.right-inner {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: rgb(217, 217, 217);
+  width: 90%;
+  margin-left: 20px;
+  min-height: 50%;
+}
+.right-inner img {
+  padding-bottom: 12px;
+}
+.right-inner h1 {
+  letter-spacing: -1.2px;
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.right-inner h2 {
+  font-size: 31px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.right-inner button {
+  max-width: 380px;
+  margin-bottom: 20px;
+  min-height: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 100px;
+  border: none;
+  width: 100%;
+  color: rgb(235, 235, 235);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.signupBtn {
+  background: rgb(29, 161, 242);
+}
+.signupBtn:hover {
+  background: rgb(22, 141, 214);
+}
+.loginBtn {
+  background: none;
+  border: 1px solid #1da1f2 !important;
+  color: #1da1f2 !important;
+}
+.loginBtn:hover {
+  background: rgba(29, 161, 242, 0.1);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 10vh;
+  color: rgb(110, 118, 125);
+  width: 100%;
+  background: black;
+  font-weight: 400;
+  font-size: 12.7px;
+  line-height: 16px;
+}
+.links {
+  display: flex;
+}
+.footer-links {
+  padding-right: 12px;
+  margin: 4px 0px;
+  cursor: pointer;
+}
+.footer-links:hover {
+  text-decoration: underline;
+}
